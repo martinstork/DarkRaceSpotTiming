@@ -1,0 +1,23 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+
+.main-header {
+    display: none !important;
+}
+
+.page-name, .logo {
+    display: none !important;
+}
+
+.top-space {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.loader {
+    background-color: black;
+    background: black;
+}

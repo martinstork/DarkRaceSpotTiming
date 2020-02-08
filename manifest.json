@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "iRacing livetiming darkmode",
+    "version": "1.1",
+    "description": "Adds darkmode to racespot.tv/timing",
+    "icons": {
+        "48": "icons/darktiming-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.racespot.tv/timing*"
+            ],
+            "css": [
+                "dark.css"
+            ],
+            "js": [
+                "timingdark.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        "dark.css",
+        "timingdark.js"
+    ]
+}
